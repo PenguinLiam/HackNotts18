@@ -27,3 +27,8 @@ Then from the terminal run:
 ```bash
 node test.js
 ```
+Remember to update the fields stating e.g.
+```
+'INSERT_API_KEY_HERE' 
+```
+with your information from nexmo: https://dashboard.nexmo.com/sign-in
