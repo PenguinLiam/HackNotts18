@@ -23,3 +23,7 @@ To install the nexmo module use:
 ```bash
 npm install nexmo
 ```
+Then from the terminal run:
+```bash
+node test.js
+```
