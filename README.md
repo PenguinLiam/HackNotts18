@@ -15,3 +15,11 @@ Maximum of 4 people a group
 * Recruit:
   * Recruit members by known lanugages (specific/all)
   * a decription of your project idea
+
+### How to run
+To run the test.js file (which calls the app.js file) you need to have nexmo installed in the same directory as test.js and app.js.
+
+To install the nexmo module use:
+''' bash
+npm install nexmo
+'''
