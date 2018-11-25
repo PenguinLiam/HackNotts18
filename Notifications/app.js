@@ -5,8 +5,8 @@ function sendMessage (userName, recipient) {
 	// Create API object
 	const Nexmo = require('nexmo')
 	const nexmo = new Nexmo({
-	  apiKey: '***REMOVED***',
-	  apiSecret: '***REMOVED***'
+	  apiKey: 'INSERT_API_KEY_HERE',
+	  apiSecret: 'INSERT_API_SERCRET_HERE'
 	})
 
 	// Message information
