@@ -1,6 +1,13 @@
 <template>
-  <div id="login">
-    <a href="#" class="btn"><MLHSVG class="logo"/> Login with MLH</a>
+  <div id="login" class="empty">
+    <div class="empty-icon">
+      <i class="icon icon-flag"></i>
+    </div>
+    <p class="empty-title h5">You are not logged in!</p>
+    <p class="empty-subtitle">Click the button to log in with MyMLH</p>
+    <div class="empty-action">
+      <a :href="url" class="btn"><MLHSVG class="logo"/> Login with MyMLH</a>
+    </div>
   </div>
 </template>
 
@@ -15,8 +22,8 @@ export default {
   data() {
     return {
       url: `https://my.mlh.io/oauth/authorize?client_id=30d432a51dab16b788af5145e7c818a5154ebb282f93d6c862b2f3d4d71eb930&redirect_uri=${encodeURI(
-        window.location.host + "/login/callback"
-      )}&response_type=code&scope=phone_number+email+event`
+        window.location.origin + "/login/callback"
+      )}&response_type=token&scope=phone_number+email`
     };
   }
 };

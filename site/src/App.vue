@@ -1,12 +1,26 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <header class="navbar">
+      <section class="navbar-section">
+        <a href="/" class="navbar-brand mr-2"><LogoSVG/></a>
+        <a href="/" class="btn btn-link">Home</a>
+        <a href="/profile" class="btn btn-link">Profile</a>
+      </section>
+    </header>
     <router-view/>
   </div>
 </template>
+
+<script>
+import LogoSVG from "@/assets/logo.svg";
+
+export default {
+  name: "App",
+  components: {
+    LogoSVG
+  }
+};
+</script>
 
 <style>
 #app {
@@ -27,5 +41,9 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+.navbar-brand {
+  padding: 5px;
 }
 </style>
