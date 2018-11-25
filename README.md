@@ -20,6 +20,6 @@ Maximum of 4 people a group
 To run the test.js file (which calls the app.js file) you need to have nexmo installed in the same directory as test.js and app.js.
 
 To install the nexmo module use:
-'''
+```bash
 npm install nexmo
-'''
+```
